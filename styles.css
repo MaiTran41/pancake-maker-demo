@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: #f6e5cc;
+  --text-color: #55351b;
+  --accent-color: #2d6b34;
+  --button-hover-color: #3e9a49;
+  --summary-bg-color: #e7c6ab;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  overflow: scroll;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100vw;
+}
+
+.image-container {
+  position: relative;
+  flex: 3;
+  min-height: 100vh;
+}
+
+.image-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+#order-info-container {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  max-height: 100vh;
+  padding: 50px 0;
+  align-items: center;
+}
+
+.order-form-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.price-banner {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-weight: bolder;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+h3 {
+  margin-top: 15px;
+}
+
+#customerName {
+  border-radius: 5px;
+  border: 1px solid #55351b;
+  font-family: inherit;
+  height: 2rem;
+  margin: 12px 0 0 0;
+  color: white;
+  width: 140px;
+  padding: 0.5rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  accent-color: var(--accent-color);
+  border: 1px solid #a67c52;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+  accent-color: var(--accent-color);
+}
+
+select,
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+select {
+  background-color: white;
+  color: var(--text-color);
+  font-family: inherit;
+  border-radius: 4px;
+  padding: 0.25rem;
+  height: 2rem;
+  width: 140px;
+}
+
+#confirm-order-btn a {
+  text-decoration: none;
+  font-family: inherit;
+  color: white;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--accent-color);
+  height: 36px;
+  color: white;
+  padding: 10px;
+  transition: all 0.4s ease-out;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.btn-container {
+  display: flex;
+  gap: 1.5rem;
+  padding: 20px 0;
+}
+
+#orderSummary {
+  background-color: var(--summary-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px 0;
+  padding: 1rem 1.25rem;
+  line-height: 1.5;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+#orderSummary h3 {
+  margin: 0;
+}
