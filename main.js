@@ -133,7 +133,7 @@ const confirmOrderHandler = () => {
 
   saveOrders(existingOrdersList);
 
-  window.location.href = "/week_07/pancake_maker3/allOrders.html";
+  window.location.href = "/allOrders.html";
 };
 
 const getExistingOrders = () => {

@@ -58,7 +58,7 @@ const generateOrderCardHtmlString = (order) => `
           </li>
           <li>
             <label for="">Total Price:</label>
-            <span class="value">${order.totalPrice}</span>
+            <span class="value">${order.totalPrice}€</span>
           </li>
 
           <li class="status-content-container">
